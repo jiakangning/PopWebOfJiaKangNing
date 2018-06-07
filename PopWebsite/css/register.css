@@ -1,0 +1,28 @@
+.login{height: 716px; margin-top: 20px;}
+.loginsupport{width: 600px;height: 700px;margin-right: 10px;}
+@media only screen and (min-width:1500px) {
+	.loginsupport{width: 740px;height: 700px;margin-right: 10px;}
+}
+.suptop{width: 100%;height: 588px;background: url(../img/images04/login.jpg) no-repeat center center;}
+.supfooter{width: 100%;height: 90px;margin-top: 20px;}
+.supfooter h1{color: #333;font-size: 16px;padding-left: 35px;margin-bottom: 14px;background: url(../img/images04/registericon.png) no-repeat 0 -120px;}
+.supfooter .vipcontroller{width: 100%;height: 40px;background: url(../img/images04/regVipcontroller.png) no-repeat center center;}
+.loginmain{width: 722px;height: 716px;background: #fff;border: 1px solid #DEDEDE;position: relative;z-index: 1;}
+.form{width: 100%;height: 66px;padding-top: 30px;}
+.formtitle{width: 674px;padding-left: 50px;}
+.formtitle h1{color: #000;font-size: 24px;font-weight: bold;display: inline-block;margin-right: 20px;width: 210px;}
+.formtitle a{color: #CC0066;font-weight: bold;font-size: 18px;border-bottom: 2px solid #CC0066;display: inline-block;cursor: pointer;}
+.formtitle a:hover{color: #CC0066;text-decoration: none;}
+form{padding: 20px;}
+form .input-group{margin-top: 20px;}
+#time{margin-top: 30px;}
+#time .timeselect .form-control{width:30%;margin-right:3%;float: left;}
+form .btn{width: 100%;overflow: hidden;}
+form .btn .btn-danger{width: 30%; margin: 0 auto;}
+form .inducefir{display: none;}
+form .inducesec{display: none;}
+form .inducethird{display: none;}
+form .nonefir span{color: red;position: relative;top: -60px;left: 650px;z-index: 10;font-size: 30px;display: none;}
+form .nonesec span{color: red;position: relative;top: -60px;left: 650px;z-index: 10;font-size: 30px;display: none;}
+form .nonethird span{color: red;position: relative;top: -60px;left: 650px;z-index: 10;font-size: 30px;display: none;}
+form .nonefouth span{color: red;position: relative;top: -60px;left: 650px;z-index: 10;font-size: 30px;display: none;}

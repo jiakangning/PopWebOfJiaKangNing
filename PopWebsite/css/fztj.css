@@ -1,0 +1,29 @@
+.leftctop h1.trend{background-position: 0 -131px;font-size: 20px;}
+@media only screen and (min-width:1500px) {
+	.rightPiclist{width: 1220px;}
+}
+.rightPiclist{padding: 20px 0;}
+@media only screen and (min-width:1500px) {
+	.rightPiclist .styles{margin-left: 5px;}
+}
+@media only screen and (min-width:1500px) {
+	.rightPiclist .styles li{margin-left: 14px;}
+}
+.rightPiclist .styles li{width: 185px;background: #F4F4F4;border: 1px solid #D4D4D4;float: left;margin: 0 0 25px 14px;position: relative;z-index: 0;}
+.rightPiclist .styles li:hover{box-shadow: 0 0 10px #c9c8c8;}
+.rightPiclist .styles li .img_a{width: 165px;height: 220px;display: inline-block;padding: 10px 10px 0;position: relative;overflow: hidden;}
+.rightPiclist .styles li .img_a img{width: 165px;height: 220px;}
+.img_a .Dtime{width: 165px;height: 30px;text-align: center;line-height: 30px;color: #fff;position: absolute;background: url(http://img2.fm.pop-fashion.com/global/images/opa40.png) repeat;top: 200px;left: -100%;}
+/*.rightPiclist .styles li:hover .img_a .Dtime{display: block;}*/
+.img_a .Dtime em{width: 17px;height: 17px;background: url(../img/images07/fztjicon01.png) no-repeat -35px 0;display: inline-block;vertical-align: middle;margin-right: 5px;}
+.rightPiclist .styles li .picTxt{height: 40px;padding: 10px 0;width: 185px;}
+.rightPiclist .styles li .picTxt p{padding: 0 5px;font-size: 12px;line-height: 18px;text-align: center;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.rightPiclist .styles li .picTxt p:hover a{color: #CC0066;}
+.rightPiclist .styles li .Picpp{height: 35px;line-height: 35px;background: #e4e4e1;padding: 0 5px;font-size: 12px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;text-align: center;}
+.rightPiclist .styles li .Picpp a{color: #8b6b38;}
+.rightPiclist .styles li .Picpp:hover a{text-decoration: none;}
+.rightPiclist .styles li .cate_hover{width: auto;height: 25px;min-width: 60px;position: absolute;right: 20px;top: 17px;background: url(http://img2.fm.pop-fashion.com/global/images/opa40.png) repeat;border-radius: 3px;padding: 0 5px;transition: all 1s linear;}
+.rightPiclist .styles li .cate_hover a{color: #fff;font-size: 14px;}
+.rightPiclist .styles li:hover .cate_hover{background: #CC0066;}
+.rightPiclist .styles li .cate_hover a:hover{text-decoration: none;}
+.clearfix:after{content: "" ;display: block;height: 0;clear: both;visibility: hidden;}

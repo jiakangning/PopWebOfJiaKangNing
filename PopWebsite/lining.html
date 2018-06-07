@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>面料</title>
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/fzsy.css" />-->
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/fsdp.css" />
+		<link rel="stylesheet" type="text/css" href="css/Tanalyze.css" />
+		<link rel="stylesheet" type="text/css" href="css/lining.css" />
+
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="header-top">
+					<div class="main clearfix">
+						<a class="alogo" href="#" target="_blank"><img class="logoer" src="img/logoer.png" /></a>
+						<p class="logo-text" style="color: #FFFFFF;">时尚引领潮流<br/> 搭配无处不在
+						</p>
+						<p class="phone" style="color: #FFFFFF;">时尚资讯：029-82222601<br/> 服装咨询 ：029-82222601
+						</p>
+					</div>
+				</div>
+				<div class="nav">
+					<div class="main-nav clearfix">
+						<ul class="navul">
+							<li>
+								<a href="xmer.html">时尚首页</a>
+							</li>
+							<li>
+								<a href="materia.html" target="_blank">时尚材料</a>
+							</li>
+							<li>
+								<a href="analyzeT.html" target="_blank">T台分析</a>
+							</li>
+							<li>
+								<a href="fsdp.html" target="_blank">专业搭配师</a>
+							</li>
+							<li>
+								<a href="fztj.html" target="_blank">服装推荐</a>
+							</li>
+							<li>
+								<a href="lining.html" target="_blank">面料</a>
+							</li>
+
+							<li>
+								<a href="brand.html" target="_blank">品牌</a>
+							</li>
+							<li>
+								<a href="register.html" target="_blank">加入我们</a>
+							</li>
+
+						</ul>
+						<div class="nav-act " style="left:0;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="fsdp_banner">
+				<ul>
+					<li class="fir">
+						<a href="#"><img src="img/images08/banner01.jpg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/images08/banner02.jpg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/images08/banner03.jpg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/images08/banner04.jpg" /></a>
+					</li>
+				</ul>
+				<script type="text/javascript">
+					$a = 0;
+					$lunbo();
+
+					function $lunbo() {
+						$(".fsdp_banner ul li").eq($a).fadeOut(1000);
+						$a++;
+						if($a == 5) { $a = 0 }
+						$(".fsdp_banner ul li").eq($a).fadeIn(1000);
+					}
+
+					var time = setInterval($lunbo, 3000);
+					$(".fsdp_banner ul").mouseover(function() {
+
+						clearInterval(time);
+					})
+					$(".fsdp_banner ul").mouseout(function() {
+
+						time = setInterval($lunbo, 3000);
+					})
+				</script>
+			</div>
+			<div class="Lmain">
+				<div class="forecast">
+					<div class="Fotitle clearfix">
+						<span class="fl flline"></span>
+						<h1 class="fm fl"><img src="img/images08/fm.png"/></h1>
+						<span class="fl frline"></span>
+					</div>
+					<div class="Fobox">
+						<h2 class="Fobox_title">
+            				<span></span>
+            				<img src="img/images08/Foboxrtitle.png"/>
+            			</h2>
+						<div class="Folist">
+							<ul class="clearfix">
+								<li>
+									<a href="#" class="pic"><img src="img/images08/Foboxlist01.jpg" /></a>
+									<a href="#" class="color">色彩</a>
+									<div class="clearfix Folintroduce">
+										<p class="fl Folintroduce_title">
+											<a href="#" target="_blank">2019春夏女装衬衫面料色彩趋势预测--条型契约</a>
+										</p>
+										<a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="pic"><img src="img/images08/Foboxlist02.jpg" /></a>
+									<a href="#" class="color">色彩</a>
+									<div class="clearfix Folintroduce">
+										<p class="fl Folintroduce_title">
+											<a href="#" target="_blank">2019春夏女装衬衫面料色彩趋势预测--条型契约</a>
+										</p>
+										<a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="pic"><img src="img/images08/Foboxlist03.jpg" /></a>
+									<a href="#" class="color">色彩</a>
+									<div class="clearfix Folintroduce">
+										<p class="fl Folintroduce_title">
+											<a href="#" target="_blank">2019春夏女装衬衫面料色彩趋势预测--条型契约</a>
+										</p>
+										<a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="Fobox">
+						<h2 class="Fobox_title">
+            				<span></span>
+            				<img src="img/images08/Foboxtitle02.png"/>
+            			</h2>
+						<div class="Folist">
+							<ul class="clearfix">
+								<li>
+									<a href="#" class="pic"><img src="img/images08/Foboxlist04.jpg" /></a>
+									<a href="#" class="color">T台面料</a>
+									<div class="clearfix Folintroduce">
+										<p class="fl Folintroduce_title">
+											<a href="#" target="_blank">2019春夏男装衬衫面料色彩趋势预测--条型契约</a>
+										</p>
+										<a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="pic"><img src="img/images08/Foboxlist05.jpg" /></a>
+									<a href="#" class="color">T台面料</a>
+									<div class="clearfix Folintroduce">
+										<p class="fl Folintroduce_title">
+											<a href="#" target="_blank">2019春夏男装衬衫面料色彩趋势预测--条型契约</a>
+										</p>
+										<a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="pic"><img src="img/images08/Foboxlist06.jpg" /></a>
+									<a href="#" class="color">T台面料</a>
+									<div class="clearfix Folintroduce">
+										<p class="fl Folintroduce_title">
+											<a href="#" target="_blank">2019春夏男装衬衫面料色彩趋势预测--条型契约</a>
+										</p>
+										<a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="Fast_reaction clearfix">
+						<div class="apm Fobox fl">
+							<h2 class="Fobox_title">
+            				<span></span>
+            				<img src="img/images08/apm.png"/>
+            			    </h2>
+							<div class="Folist">
+								<ul class="clearfix">
+									<li>
+										<a href="#" class="pic">
+											<img src="img/images08/apmlist01.jpg" />
+											<div class="pink">
+												<div class="pink_circle">
+													<span>查看报告</span>
+												</div>
+											</div>
+										</a>
+										<div class="clearfix Folintroduce">
+											<p class="fl Folintroduce_title">
+												<a href="#" target="_blank">2019春夏男装衬衫面料色彩趋势预测--条型契约</a>
+											</p>
+											<a href="#" class="fr more">更多<i></i></a>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="pic">
+											<img src="img/images08/apmlist02.jpg" />
+											<div class="pink">
+												<div class="pink_circle">
+													<span>查看报告</span>
+												</div>
+											</div>
+										</a>
+										<div class="clearfix Folintroduce">
+											<p class="fl Folintroduce_title">
+												<a href="#" target="_blank">2019春夏男装衬衫面料色彩趋势预测--条型契约</a>
+											</p>
+											<a href="#" class="fr more">更多<i></i></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="street Fobox fr">
+							<h2 class="Fobox_title">
+            				<span></span>
+            				<img src="img/images08/street.png"/>
+            			    </h2>
+							<div class="Folist">
+								<ul class="clearfix">
+									<li>
+										<a href="#" class="pic">
+											<img src="img/images08/streetlist01.jpg" />
+											<div class="pink">
+												<div class="pink_circle">
+													<span>查看报告</span>
+												</div>
+											</div>
+										</a>
+										<div class="clearfix Folintroduce">
+											<p class="fl Folintroduce_title">
+												<a href="#" target="_blank">2019春夏男装衬衫面料色彩趋势预测--条型契约</a>
+											</p>
+											<a href="#" class="fr more">更多<i></i></a>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="pic">
+											<img src="img/images08/streetlist02.jpg" />
+											<div class="pink">
+												<div class="pink_circle">
+													<span>查看报告</span>
+												</div>
+											</div>
+										</a>
+										<div class="clearfix Folintroduce">
+											<p class="fl Folintroduce_title">
+												<a href="#" target="_blank">2019春夏男装衬衫面料色彩趋势预测--条型契约</a>
+											</p>
+											<a href="#" class="fr more">更多<i></i></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fabric">
+					<div class="con_width">
+						<div class="Fotitle clearfix fa_title">
+							<span class="fl flline"></span>
+							<h1 class="fm fl"><img src="img/images08/fabrictitle.png"/></h1>
+							<span class="fl frline"></span>
+						</div>
+						<div class="fa_list clearfix">
+							<div class="fl pfb">
+								<div class="pfb_title clearfix">
+									<h2 class="Fobox_title pfb_titlemain fl">
+            				            <span></span>
+            				            <img src="img/images08/pfbtitle.png"/>
+            			           </h2>
+									<a href="#" class="fr more">更多<i></i></a>
+								</div>
+								<div class="pfblist">
+									<ul class="clearfix">
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/pfblist01.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/pfblist02.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/pfblist03.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/pfblist04.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/pfblist05.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/pfblist06.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+							<div class="fr dr">
+								<div class="pfb_title clearfix">
+									<h2 class="Fobox_title pfb_titlemain fl">
+            				            <span></span>
+            				            <img src="img/images08/dr.png"/>
+            			           </h2>
+									<a href="#" class="fr more">更多<i></i></a>
+								</div>
+								<div class="pfblist">
+									<ul class="clearfix">
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/drlist01.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/drlist02.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/drlist03.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/drlist04.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/drlist05.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="pic">
+												<img src="img/images08/drlist06.jpg" />
+												<div class="pink">
+													<div class="pink_circle">
+														<span>查看图片</span>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+						<div class="trade">
+							<div class="trade_title clearfix">
+								<h2 class="Fobox_title pfb_titlemain fl">
+            				            <span></span>
+            				            <img src="img/images08/trade.png"/>
+            			           </h2>
+								<a href="#" class="fr more">更多<i></i></a>
+							</div>
+							<div class="trade_list">
+								<ul class="clearfix">
+									<li>
+										<a href="#" class="pic">
+											<img src="img/images08/tradelist01.jpg" />
+											<div class="pink">
+												<div class="pink_circle">
+													<span>查看图片</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="pic">
+											<img src="img/images08/tradelist02.jpg" />
+											<div class="pink">
+												<div class="pink_circle">
+													<span>查看图片</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="pic">
+											<img src="img/images08/tradelist03.jpg" />
+											<div class="pink">
+												<div class="pink_circle">
+													<span>查看图片</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="pic">
+											<img src="img/images08/tradelist04.jpg" />
+											<div class="pink">
+												<div class="pink_circle">
+													<span>查看图片</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="pic">
+											<img src="img/images08/tradelist05.jpg" />
+											<div class="pink">
+												<div class="pink_circle">
+													<span>查看图片</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="pic">
+											<img src="img/images08/tradelist06.jpg" />
+											<div class="pink">
+												<div class="pink_circle">
+													<span>查看图片</span>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="magzine">
+					<div class="con_width">
+						<div class="Fotitle clearfix">
+						<span class="fl flline"></span>
+						<h1 class="fm fl"><img src="img/images08/magzine.png"/></h1>
+						<span class="fl frline"></span>
+					</div>
+					<div class="magzinelist">
+						<div class="Fobox">
+						<h2 class="Fobox_title">
+            				<span></span>
+            				<img src="img/images08/designbooks.png"/>
+            			</h2>
+						<div class="Folist">
+							<ul class="clearfix">
+								<li>
+									<a href="#" class="color">色彩</a>
+									<div class="bg-div">
+										<a href="#"><img src="img/images08/1.jpg"/></a>
+									</div>
+									<div class="ma_text clearfix">
+										<p class="ma-tit"><a href="#" target="_blank">《Mostrend》2018-19秋冬男装色彩趋势</a></p>
+									    <a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="color">色彩</a>
+									<div class="bg-div">
+										<a href="#"><img src="img/images08/1 (1).jpg"/></a>
+									</div>
+									<div class="ma_text clearfix">
+										<p class="ma-tit"><a href="#" target="_blank">《Mostrend》2018-19秋冬男装色彩趋势</a></p>
+									    <a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="color">色彩</a>
+									<div class="bg-div">
+										<a href="#"><img src="img/images08/1 (2).jpg"/></a>
+									</div>
+									<div class="ma_text clearfix">
+										<p class="ma-tit"><a href="#" target="_blank">《Mostrend》2018-19秋冬男装色彩趋势</a></p>
+									    <a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="color">色彩</a>
+									<div class="bg-div">
+										<a href="#"><img src="img/images08/1 (2).jpg"/></a>
+									</div>
+									<div class="ma_text clearfix">
+										<p class="ma-tit"><a href="#" target="_blank">《Mostrend》2018-19秋冬男装色彩趋势</a></p>
+									    <a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="color">色彩</a>
+									<div class="bg-div">
+										<a href="#"><img src="img/images08/1 (3).jpg"/></a>
+									</div>
+									<div class="ma_text clearfix">
+										<p class="ma-tit"><a href="#" target="_blank">《Mostrend》2018-19秋冬男装色彩趋势</a></p>
+									    <a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="color">色彩</a>
+									<div class="bg-div">
+										<a href="#"><img src="img/images08/1 (4).jpg"/></a>
+									</div>
+									<div class="ma_text clearfix">
+										<p class="ma-tit"><a href="#" target="_blank">《Mostrend》2018-19秋冬男装色彩趋势</a></p>
+									    <a href="#" class="fr more">更多<i></i></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div class="map clearfix">
+					<div class="contentW">
+						<div class="fl">
+							<div class="tel">
+								<span></span>
+								<p class="telNum">4008-210-500<em>（售前）</em><br/> 4008-210-662
+									<em>（售后）</em></p>
+							</div>
+							<div class="clear"></div>
+							<p class="tTime">POP服装趋势网客服热线<br/>周一至周日：09:00-22:00</p>
+						</div>
+						<div class="catList fl">
+							<!--底部栏目-->
+
+							<ul>
+								<li class="first">
+									<a href="javascript:void(0)">趋势解读</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>主题色彩</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>图案趋势</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>面辅料趋势</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>工艺趋势</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>廓形趋势</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>企划/组货</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>快反应</a>
+								</li>
+							</ul>
+							<ul class="mainT">
+								<li class="first">
+									<a href='javascript:void(0)'>流行分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>T台分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>订货会分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>设计师品牌分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>标杆品牌分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>市场分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>展会分析</a>
+								</li>
+							</ul>
+							<ul class='fenK'>
+								<li class="first">
+									<a href='javascript:void(0)'>潮流领袖</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>街拍分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>行业报道</a>
+								</li>
+								</li>
+							</ul>
+							<ul>
+								<li class="first">
+									<a href='javascript:void(0)'>款式</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>秀场提炼</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>订货会</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>设计师品牌</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>名牌精选</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>款式流行</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>全球实拍</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>潮流领袖</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>街拍图库</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="first">
+									<a href='javascript:void(0)'>图案</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>图案素材</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>大牌花型</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>图案专题</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>图案工艺</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>数码云打印</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="first">
+									<a href="javascript:void(0)">T台</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">巴黎时装周</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">纽约时装周</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">米兰时装周</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">伦敦时装周</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">其它</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="first">
+									<a href='javascript:void(0)'>读物</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>趋势手稿</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>单品合辑</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>快反应系列</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>广告大片</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="first">
+									<a href='javascript:void(0)'>素材</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>灵感源</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>灵感视频</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>款式模板</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>款式细节</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>店铺陈列</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>展会面料</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>服饰品</a>
+								</li>
+							</ul>
+
+						</div>
+						<div class="fr">
+							<div class="erwm">
+								<p style="color: #fff;">官方微信服务号</p>
+								<img alt="官方微信服务号" src="img/images10/wechat.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="log-ico log-ico-safy">
+					<div class="contentW">
+						<ul>
+							<li>
+								<a class="pop" href="javascript:void(0)" target="_blank"></a>
+							</li>
+							<li>
+								<a class="pshous" href="javascript:void(0)" target="_blank"></a>
+							</li>
+							<li>
+								<a class="pshoe" href="javascript:void(0)" target="_blank"></a>
+							</li>
+							<li>
+								<a class="pbag" href="javascript:void(0)" target="_blank"></a>
+							</li>
+							<li>
+								<a class="pjiaf" href="javascript:void(0)" target="_blank"></a>
+							</li>
+							<li>
+								<a class="pulb" href="javascript:void(0)" target="_blank"></a>
+							</li>
+						</ul>
+						<div class="aboutPop">
+							<div>
+								<a href="#" target="_blank" rel="nofollow">关于我们</a>|
+								<a href="#" target="_blank" rel="nofollow">加入会员</a>|
+								<a href="#" target="_blank" rel="nofollow">会员须知</a>|
+								<a href="#" target="_blank" rel="nofollow">收费一览</a>|
+								<a href="#" target="_blank" rel="nofollow">付款方式</a>|
+								<a href="#" target="_blank" rel="nofollow">法律声明</a>|
+								<a href="#" target="_blank" rel="nofollow">联系我们</a>|
+								<a href="#" rel="nofollow">友情链接</a>|
+								<a href="#" target="_blank" rel="nofollow">诚聘英才</a>|
+								<a href="#" target="_blank">网站地图</a>|
+								<a href="#" target="_blank" rel="nofollow">广告中心</a>
+								<!--<a href="http://www.pop136.com/fuwu.php" target="_blank" rel="nofollow">帮助中心</a>|
+				<a href="/sitemap/sitemap.xml" target="_blank">网站地图</a>|-->
+							</div>
+							<p>上海逸尚云联信息技术股份有限公司 &copy; 2004-2020<span>法律顾问：北京中银（上海）律师事务所 沪ICP备06003020号-1</span></p>
+							<div style="width:300px;margin:0 auto; padding:20px 0 0;">
+								<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000973" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://img1.fm.pop-fashion.com/global/images/safty.png" style="float:left;" />
+									<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31010402000973号</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

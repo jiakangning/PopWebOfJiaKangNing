@@ -1,0 +1,8 @@
+.reference li{margin-left: 33px;width: 183px;height: 300px;border: 1px solid #D4D4D4;float: left;}
+@media only screen and (min-width:1500px) {
+	.reference li{margin-left: 16px;}
+}
+.reference li .pic_box{width: 165px;height: 220px;background-color: #fff;padding: 9px;}
+.reference li .pic_box>a{width: 165px;height: 220px;display: inline-block;position: relative;}
+.reference li .pic_box>a img{width: 165px;height: 220px;}
+.reference li .titlebox{width: 183px;height: 54px;background-color: #E4E4E1;padding-top: 8px;text-align: center;}

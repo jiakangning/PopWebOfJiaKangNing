@@ -1,0 +1,23 @@
+.rightmain{height: 1190px;}
+@media only screen and (min-width:1500px) {
+	#Tright ul li{width: 587px;}
+}
+#Tright ul.Tanalyze{overflow: hidden;}
+#Tright ul.Tanalyze li{height: 208px;float: left;}
+#Tright ul.Tanalyze li>.fl{width: 250px;height: 208px;overflow: hidden;position: relative;}
+#Tright ul.Tanalyze li>.fl .slider{width:180px;z-index: 1;cursor: pointer;background: none;overflow: hidden;display: block;height: 135px;position: absolute;top: 35px;left: 35px;}
+#Tright ul.Tanalyze li>.fl .slider>a{display: block;width: 100%;height: 135px;position: absolute;left: 0;top: 0;}
+#Tright ul.Tanalyze li>.fl .slider>a>img{width: 60px;height: 135px;float: left;margin-top: 0px;transition: all .2s linear;}
+/*#Tright ul.Tanalyze li>.fl .slider>a:hover>img.Tacol1{margin-top: 135px;}
+#Tright ul.Tanalyze li>.fl .slider>a:hover>img.Tacol3{margin-top: 135px;}*/
+/*#Tright ul.Tanalyze li>.fl .slider>a>img.Tacol1{left: 0px;}
+#Tright ul.Tanalyze li>.fl .slider>a>img.Tacol2{left: 60px;}
+#Tright ul.Tanalyze li>.fl .slider>a>img.Tacol3{left: 120px;}*/
+.text_down{padding: 25px 20px 20px;overflow: hidden;background-color: #F4F4F4;margin-top: 5px;}
+.text_down p.title{overflow: hidden;height: 44px;color: #000;font-size: 14px;margin-top: 5px;cursor: pointer;line-height: 22px;}
+.text_down .leibie{line-height: 22px;height: 70px;padding-top: 5px;}
+.text_down .leibie p{width: 148px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.text_down p.time{margin-top: 6px;color: #929292;}
+.text_down p.time span{margin: 2px 0;}
+.topIcon{position: absolute;z-index: 2;left: 10px;top: 10px;width: 58px;height: 30px;font-size: 12px;color: #fff;background-color: #000;opacity: .6;overflow: hidden;border-radius: 3px;line-height: 30px;text-align: center;padding: 0 10px;transition: all 1s linear;}
+#Tright ul.Tanalyze li:hover .topIcon{background: #CC0066;opacity: .6;}

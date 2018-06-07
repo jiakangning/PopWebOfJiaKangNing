@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/fsdp.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="header-top">
+					<div class="main clearfix">
+						<a class="alogo" href="#" target="_blank"><img class="logoer" src="img/logoer.png" /></a>
+						<p class="logo-text" style="color: #FFFFFF;">时尚引领潮流<br/> 搭配无处不在
+						</p>
+						<p class="phone" style="color: #FFFFFF;">时尚资讯：029-82222601<br/> 服装咨询 ：029-82222601
+						</p>
+					</div>
+				</div>
+				<div class="nav">
+					<div class="main-nav clearfix">
+					<ul class="navul">
+							<li>
+								<a href="xmer.html">时尚首页</a>
+							</li>
+							<li>
+								<a href="materia.html" target="_blank">时尚材料</a>
+							</li>
+							<li>
+								<a href="analyzeT.html" target="_blank">T台分析</a>
+							</li>
+							<li>
+								<a href="fsdp.html" target="_blank">专业搭配师</a>
+							</li>
+							<li>
+								<a href="fztj.html" target="_blank">服装推荐</a>
+							</li>
+							<li>
+								<a href="lining.html" target="_blank">面料</a>
+							</li>
+
+							<li>
+								<a href="brand.html" target="_blank">品牌</a>
+							</li>
+							<li>
+								<a href="register.html" target="_blank">加入我们</a>
+							</li>
+
+						</ul>
+						<div class="nav-act " style="left:0;"></div>
+					</div>
+				</div>
+
+			</div>
+			<div class="login con_width">
+				<div class="loginsupport fl">
+					<div class="suptop">
+
+					</div>
+					<div class="supfooter">
+						<h1>会员特权</h1>
+						<div class="vipcontroller">
+
+						</div>
+					</div>
+				</div>
+				<div class="loginmain fr">
+					<div class="form">
+						<div class="formtitle">
+							<h1>欢迎注册会员</h1>
+							<a href="#">Jion Now</a>
+						</div>
+						<form action="enter.php" method="post">
+
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1"></span>
+								<input type="text" class="form-control" placeholder="用户名" id="name" maxlength="20">
+							</div>
+							<span class="inducefir">只能由字母数字下划线组成</span>
+							<div class="nonefir">
+									<span>!</span>
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-envelope" id="basic-addon1"></span>
+								<input type="text" class="form-control" placeholder="邮箱" id="account" maxlength="20">
+							</div>
+							<span class="inducesec">邮箱就是账号</span>
+							<div class="nonesec">
+								<span>!</span>
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-lock"></span>
+								<input type="password" class="form-control" id="password" maxlength="20">
+							</div>
+							<div class="checkout">
+								<span style="color: #ccc;">密码级别:</span><strong class="liner"></strong>
+							</div>
+							<div class="nonethird">
+								<span>!</span>
+							</div>
+							
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-lock"></span>
+								<input type="password" class="form-control" id="repeat" maxlength="20">
+							</div>
+							<span class="inducethird">再次输入密码</span>
+							<div class="nonefouth">
+								<span>!</span>
+							</div>
+							<div id="time">
+
+								<span style="font-weight: 600;font-size: 15px;">出生年月日</span>
+								<div class="timeselect">
+									<div class="clear">
+
+									</div>
+									<select id="col1" class="form-control">
+										<option value=""></option>
+									</select>
+									<select id="col2" class="form-control">
+										<option value=""></option>
+									</select>
+									<select id="col3" class="form-control">
+										<option value=""></option>
+									</select>
+								</div>
+
+							</div>
+							<div class="tex">
+								<span style="font-weight: 600;font-size: 15px;">备注及留言</span>
+								<textarea name="" rows="" cols="" class="texter form-control"></textarea>
+							</div>
+							<p class="liuyan">留言内容还剩</p>
+							<div class="btn">
+								<button type="submit" class="btn btn-danger">注册</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+			
+			$(function(){
+				       var $bool=0;
+						$("#name").focus(function(){
+							var nt=$("#name").offset().top;
+							console.log(nt);
+							$("form .inducefir").show("slow");
+							$("#name").keyup(function(){
+								var onval=$("#name").val();
+								var nre=/^[a-z][0-9A-Z]*$/i;
+								if(!nre.test(onval)){
+									$("form .nonefir span").css({"display":"block","top":"-60px"});
+									$bool=1;
+								}
+								else{
+									$("form .nonefir span").css({"display":"none","top":"-60px"});
+									$bool=0;
+								}
+							})
+						})
+						$("#name").blur(function(){
+							$("form .inducefir").hide();
+							$("form .nonefir span").css({"top":"-40px"});
+						})
+						$("#account").focus(function(){
+							$("form .inducesec").show("slow");
+							$("#account").keyup(function(){
+								var oaval=$("#account").val();
+								var are=/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+								if(!are.test(oaval)){
+									$("form .nonesec span").css({"display":"block","top":"-60px"});
+									$bool=1;
+								}
+								else{
+									$("form .nonesec span").css({"display":"none","top":"-60px"});
+									$bool=0;
+								}
+								
+							})
+						})
+						$("#account").blur(function(){
+							$("form .inducesec").hide();
+							$("form .nonesec span").css({"top":"-40px"})
+						})
+						$("#password").focus(function(){
+							$("#password").keyup(function(){
+								var opval=$("#password").val();
+								var ore=/[0-9]/;
+								var ore1=/[a-z]/;
+								var ore2=/[A-Z]/;
+								if(ore.test(opval)||ore1.test(opval)||ore2.test(opval)){
+									$("form .nonethird span").css({"display":"none"});
+									$(".checkout .liner").html("低")
+									$(".checkout .liner").css({"color":"red"})	
+								}
+								else{
+//									$("form .nonethird span").css({"display":"block","top":"-60px"});
+//									$(".checkout").css({"opacity":0})
+								}
+								if(ore1.test(opval) && ore.test(opval)){
+									$(".checkout .liner").html("中")
+									$(".checkout .liner").css({"color":"orange"})
+									}
+									if(ore2.test(opval) && ore1.test(opval) && ore.test(opval)){
+										$(".checkout .liner").html("高")
+									$(".checkout .liner").css({"color":"green"})
+									}
+							})
+						})
+						$("#password").blur(function(){
+							      opval=$("#password").val();
+							      $("form .nonethird span").css({"top":"-40px"});
+						})
+					    $("#repeat").focus(function(){
+					    	$("form .inducethird").show("slow");
+					    	    $("#repeat").keyup(function(){
+					    	    var	opval=$("#password").val();
+								var orval=$("#repeat").val();
+//					    	    console.log(opval);
+//					    	    console.log(orval);
+							if(opval==""){
+								alert("请输入密码");
+							}
+							else{
+								if(orval==opval){
+									$("form .nonefouth span").css({"display":"none"});
+									$bool=0;
+								}
+								else{
+									$("form .nonefouth span").css({"display":"block","top":"-60px"});
+									$bool=1;
+								}
+							}
+							
+							})
+						})
+					    $("#repeat").blur(function(){
+					    	$("form .inducethird").hide();
+					    	$("form .nonefouth span").css({"top":"-40px"});
+					    })
+					//时间
+					var date=new Date();
+					var year=date.getFullYear();
+					var month=date.getMonth();
+					var dayer=date.getDate();
+					var yearstr="";
+					var monthstr="";
+					var dayerstr="";
+					for(var i=year;i>year-50;i--){
+						yearstr+="<option>"+i+"</option>";
+					}
+					for(var i=1;i<12;i++){
+						monthstr+="<option>"+i+"</option>";
+					}
+					for(var i=1;i<31;i++){
+						dayerstr+="<option>"+i+"</option>";
+					}
+					$("#col1").html(yearstr);
+					$("#col2").html(monthstr);
+					$("#col3").html(dayerstr);
+			        var textnum=0;
+   		var abcnum=0;
+   		var maxnum=280;
+   		var texts=0;
+   		$(".texter").focus(function(){
+   		
+   			if($(".texter").val()==""){
+   				$("p.liuyan").html("您还可以输入140个字符");
+   			}
+   			else{
+   				var str=($(".texter").val().replace(/\w/g,"").length);
+   				var abcnum=$(".texter").val().length-str;
+   				var total=str*2+abcnum;
+   				if(total>maxnum){
+   					var leave=Math.ceil((total-maxnum)/2);
+   					$("p.liuyan").html("您输入的字已超出"+leave+"个字符")
+   				}
+   				else if(total<=maxnum && total>0){
+   					texts=Math.ceil((maxnum-total)/2);
+   					$("p.liuyan").html("您还可以输入"+texts+"字符")
+   				}
+   			}
+   			$(".texter").keyup(function(){
+   			if($(".texter").val()==""){
+   				$("p.liuyan").html("您还可以输入140个字符");
+   			}
+   			else{
+   				var str=($(".texter").val().replace(/\w/g,"").length);
+   				var abcnum=$(".texter").val().length-str;
+   				var total=str*2+abcnum;
+   				if(total>maxnum){
+   					var leave=Math.ceil((total-maxnum)/2);
+   					$("p.liuyan").html("您输入的字已超出"+leave+"字符")
+   				}
+   				else if(total<=maxnum && total>0){
+   					texts=Math.ceil((maxnum-total)/2);
+   					$("p.liuyan").html("您还可以输入"+texts+"个字符")
+   				}
+   			}
+   		})
+   		})
+   		$(".tex").blur(function(){
+   			
+   			if($(".tex").val()==""){
+   				$("p.liuyan").html("您还可以输入140个字符");
+   			}
+   			else{
+   				var str=($(".tex").val().replace(/\w/g,"").length);
+   				var abcnum=$(".tex").val().length-str;
+   				var total=str*2+abcnum;
+   				if(total>maxnum){
+   					var leave=Math.ceil((total-maxnum)/2);
+   					$("p.liuyan").html("您输入的字已超出"+leave+"字符")
+   				}
+   				else if(total<=maxnum && total>0){
+   					texts=Math.ceil((maxnum-total)/2);
+   					$("p.liuyan").html("您还可以输入"+texts+"字符")
+   				}
+   			}
+   		})
+			$(".btn").click(function(){
+				if($bool==1){
+					alert("有未完成的项！");
+					return false;
+				}
+				if($bool==0){
+					alert("注册成功！")
+				}
+			})
+					
+					
+					})
+			
+			
+			
+			
+			
+			</script>
+
+		<div class="footer">
+				<div class="map clearfix">
+					<div class="contentW">
+						<div class="fl">
+							<div class="tel">
+								<span></span>
+								<p class="telNum">4008-210-500<em>（售前）</em><br/> 4008-210-662
+									<em>（售后）</em></p>
+							</div>
+							<div class="clear"></div>
+							<p class="tTime">POP服装趋势网客服热线<br/>周一至周日：09:00-22:00</p>
+						</div>
+						<div class="catList fl">
+							<!--底部栏目-->
+
+							<ul>
+								<li class="first">
+									<a href="javascript:void(0)">趋势解读</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>主题色彩</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>图案趋势</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>面辅料趋势</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>工艺趋势</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>廓形趋势</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>企划/组货</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>快反应</a>
+								</li>
+							</ul>
+							<ul class="mainT">
+								<li class="first">
+									<a href='javascript:void(0)'>流行分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>T台分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>订货会分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>设计师品牌分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>标杆品牌分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>市场分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>展会分析</a>
+								</li>
+							</ul>
+							<ul class='fenK'>
+								<li class="first">
+									<a href='javascript:void(0)'>潮流领袖</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>街拍分析</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>行业报道</a>
+								</li>
+								</li>
+							</ul>
+							<ul>
+								<li class="first">
+									<a href='javascript:void(0)'>款式</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>秀场提炼</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>订货会</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>设计师品牌</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>名牌精选</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>款式流行</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>全球实拍</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>潮流领袖</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>街拍图库</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="first">
+									<a href='javascript:void(0)'>图案</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>图案素材</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>大牌花型</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>图案专题</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>图案工艺</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>数码云打印</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="first">
+									<a href="javascript:void(0)">T台</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">巴黎时装周</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">纽约时装周</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">米兰时装周</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">伦敦时装周</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">其它</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="first">
+									<a href='javascript:void(0)'>读物</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>趋势手稿</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>单品合辑</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>快反应系列</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>广告大片</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="first">
+									<a href='javascript:void(0)'>素材</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>灵感源</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>灵感视频</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>款式模板</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>款式细节</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>店铺陈列</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>展会面料</a>
+								</li>
+								<li>
+									<a href='javascript:void(0)'>服饰品</a>
+								</li>
+							</ul>
+
+						</div>
+						<div class="fr">
+							<div class="erwm">
+								<p style="color: #fff;">官方微信服务号</p>
+								<img alt="官方微信服务号" src="img/images10/wechat.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="log-ico log-ico-safy">
+					<div class="contentW">
+						<ul>
+							<li>
+								<a class="pop" href="javascript:void(0)" target="_blank"></a>
+							</li>
+							<li>
+								<a class="pshous" href="javascript:void(0)" target="_blank"></a>
+							</li>
+							<li>
+								<a class="pshoe" href="javascript:void(0)" target="_blank"></a>
+							</li>
+							<li>
+								<a class="pbag" href="javascript:void(0)" target="_blank"></a>
+							</li>
+							<li>
+								<a class="pjiaf" href="javascript:void(0)" target="_blank"></a>
+							</li>
+							<li>
+								<a class="pulb" href="javascript:void(0)" target="_blank"></a>
+							</li>
+						</ul>
+						<div class="aboutPop">
+							<div>
+								<a href="#" target="_blank" rel="nofollow">关于我们</a>|
+								<a href="#" target="_blank" rel="nofollow">加入会员</a>|
+								<a href="#" target="_blank" rel="nofollow">会员须知</a>|
+								<a href="#" target="_blank" rel="nofollow">收费一览</a>|
+								<a href="#" target="_blank" rel="nofollow">付款方式</a>|
+								<a href="#" target="_blank" rel="nofollow">法律声明</a>|
+								<a href="#" target="_blank" rel="nofollow">联系我们</a>|
+								<a href="#" rel="nofollow">友情链接</a>|
+								<a href="#" target="_blank" rel="nofollow">诚聘英才</a>|
+								<a href="#" target="_blank">网站地图</a>|
+								<a href="#" target="_blank" rel="nofollow">广告中心</a>
+								<!--<a href="http://www.pop136.com/fuwu.php" target="_blank" rel="nofollow">帮助中心</a>|
+				<a href="/sitemap/sitemap.xml" target="_blank">网站地图</a>|-->
+							</div>
+							<p>上海逸尚云联信息技术股份有限公司 &copy; 2004-2020<span>法律顾问：北京中银（上海）律师事务所 沪ICP备06003020号-1</span></p>
+							<div style="width:300px;margin:0 auto; padding:20px 0 0;">
+								<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000973" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://img1.fm.pop-fashion.com/global/images/safty.png" style="float:left;" />
+									<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31010402000973号</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

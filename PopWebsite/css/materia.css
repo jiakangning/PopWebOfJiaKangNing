@@ -1,0 +1,42 @@
+.rightbody ul li .rbhidden .rbcontent a {
+	display: block;
+}
+
+#wrap {
+	float: right;
+	position: relative;
+	height: 2141px;
+}
+
+.box {
+	float: left;
+	padding: 6px 5px 0;
+	width: 276px;
+	height: auto;
+	border: 1px solid #D4D4D4;
+	background-color: #fff;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	position: relative;
+}
+@media only screen and (min-width:1500px) {
+	.box{width: 376px;}
+}
+.box:hover{box-shadow: 0 0 10px #c5c4c4;}
+
+.box_in {
+	background-color: #fff;
+	width: 376px;
+	overflow: hidden;
+	padding: 6px 5px 0;
+}
+
+.box img {
+	width: 376px;
+}
+@media only screen and (min-width:1500px) {
+	.active_click{width: 376px;}
+}
+.active_click{font-size: 16px;color: #333;line-height: 25px;overflow: hidden;max-height: 50px;margin-bottom: 10px;cursor: pointer;}
+.sm_cont{font-size: 12ox;color: #666;overflow: hidden;}
+.art{color: #fff;background-color: #999;width: 74px;height: 28px;position: absolute;right:10px;top: 10px;text-align: center;line-height: 28px;}
